@@ -1,0 +1,125 @@
+.container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 70%;
+  margin: auto;
+  height: 700px;
+  margin-top: 2%;
+}
+.heading_intro {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 87%;
+  margin: auto;
+  margin-top: 1%;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  padding: 7px 15px 0px;
+}
+.heading {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 90%;
+  margin: auto;
+  margin-top: 1%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #32a3d8;
+}
+.calculator_title {
+  font-size: 17px;
+  padding-left: 5px;
+  color: #fff;
+}
+.form_field {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 90%;
+  margin: auto;
+  margin-top: 1%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.form_field label {
+  justify-items: flex-start;
+  display: flex;
+  font-size: 16px;
+  color: #333333;
+  padding: 7px 15px 0px;
+}
+.form_field input {
+  display: flex;
+  height: 34px;
+  border: 1px solid gray;
+  margin-top: 2px;
+  background-color: #ffffffd9;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+.form_field span {
+  border: 1px solid gray;
+  width: 23%;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333333;
+  text-align: end;
+  background-color: #e0e0e0;
+  padding: 7px 15px 0px;
+}
+.button_container {
+  width: 15%;
+  justify-content: space-around;
+  display: flex;
+  margin: auto;
+  margin-top: 1%;
+}
+.calculate_button {
+  border: none;
+  background-color: #fe6c5f;
+  color: #fff;
+  padding: 7px 10px;
+  margin: 0px 0px 0px 10px;
+  cursor: pointer;
+}
+
+.reset_button {
+  border: none;
+  background-color: #a0a1a1;
+  color: #fff;
+  padding: 7px 10px;
+  margin: 0px 0px 0px 10px;
+  cursor: pointer;
+}
+/* Media Query for all kinds of screens */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .heading_intro,
+  .heading,
+  .form_field {
+    width: 100%;
+  }
+
+  .button_container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .form_field input {
+    height: 30px;
+  }
+
+  .calculate_button,
+  .reset_button {
+    padding: 5px 8px;
+  }
+}

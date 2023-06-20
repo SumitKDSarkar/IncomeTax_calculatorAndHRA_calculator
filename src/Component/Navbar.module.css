@@ -1,0 +1,36 @@
+.Navbar {
+  /* border: 5px solid red; */
+  width: 50%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: 2%;
+  justify-content: space-around;
+}
+
+.button {
+  background-color: #3b9ac6;
+  color: #fff;
+  padding: 15px 15px 15px 50px;
+  border: none;
+  align-items: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #32a3d8;
+}
+
+/* Media Query for all kinds of screens */
+@media screen and (max-width: 768px) {
+  .Navbar {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
